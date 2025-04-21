@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito';
+}
+
+.ant-input:focus {
+  border-color: #F80C46;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(87,168,233, .2);
+  box-shadow: 0 0 0 2px rgba(87,168,233, .2);
+}
+.ant-input:hover {
+  border-color: #FC7B98;
+}
+
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 3;
+    transform: translateY(0);
+  }
+}
+
+.fade-image {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-image.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
