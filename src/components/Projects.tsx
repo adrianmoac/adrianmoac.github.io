@@ -51,7 +51,6 @@ const Projects = (_: Props) => {
     }, 300); 
   };
   
-
   return (
     <div style={{ background: Colors.ghostWhiteLight, paddingBottom: 50, paddingTop: 50 }} id='Projects'>
       <Modal open={open} onCancel={handleClose} title={title} repo={repo} liveDemo={liveDemo} technologies={technologies} images={images} description={description}></Modal>
@@ -92,7 +91,7 @@ const Projects = (_: Props) => {
         <img 
         style={{ width: '45%', height: 'fit-content', marginLeft: 'auto', marginRight: '10%', marginTop: hoveredDiv * 100, boxShadow: '15px 15px #F80C46'  }} 
         className={`fade-image ${loadedImage ? 'fade-in' : 'fade-out'}`} 
-        src={`src/assets/projects/${currentImage}`} alt='Project Name'></img>
+        src={`projects/${currentImage}`} alt='Project Name'></img>
       </div>
     </div>
   )

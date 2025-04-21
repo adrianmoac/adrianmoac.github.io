@@ -51,7 +51,7 @@ const Introduction = () => {
   return (
     <div style={{ backgroundColor: Colors.ghostWhiteStrong, height: '100vh', padding: 50, display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', alignItems: 'center', height: '80vh' }}>
-        <img src='src/assets/me.jpeg' alt='Picture of Adrian' style={{ width: '30%', height: 'auto', boxShadow: '15px 15px #F80C46' }} className="animate-on-load"/> 
+        <img src='me.jpeg' alt='Picture of Adrian' style={{ width: '30%', height: 'auto', boxShadow: '15px 15px #F80C46' }} className="animate-on-load"/> 
         <div style={{ height: 'auto',   wordWrap: 'break-word',   whiteSpace: 'normal', backgroundColor: Colors.ghostWhiteStrong, textAlign: 'center', paddingTop: 50, paddingBottom: 50, width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
           <h3 style={{ color: Colors.charcoal, fontSize: 35 }}>{currentHelloRef.current}</h3>
           <h3 style={{ color: Colors.charcoal, fontSize: 25 }}>{<>{currentNameRef.current}<span style={{ color: Colors.red }}>{currentAdrianRef.current}</span>{currentRestRef.current}</>}</h3>

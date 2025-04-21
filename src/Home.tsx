@@ -4,7 +4,7 @@ import Knowledge from './components/Knowledge'
 import Projects from './components/Projects'
 import Topbar from './components/Topbar'
 import Introduction from './components/Introduction'
-import WhoAmI from './components/whoAmI'
+import WhoAmI from './components/WhoAmI'
 
 type Props = {}
 
