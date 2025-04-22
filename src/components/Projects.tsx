@@ -43,7 +43,7 @@ const Projects = (_: Props) => {
   
     setTimeout(() => {
       const img = new Image();
-      img.src = `src/assets/projects/${pImages[0]}`;
+      img.src = `projects/${pImages[0]}`;
       img.onload = () => {
         setCurrentImage(pImages[0]); 
         setLoadedImage(true);
@@ -88,10 +88,30 @@ const Projects = (_: Props) => {
             </div>
           )}
         </div>
-        <img 
-        style={{ width: '45%', height: 'fit-content', marginLeft: 'auto', marginRight: '10%', marginTop: hoveredDiv * 100, boxShadow: '15px 15px #F80C46'  }} 
-        className={`fade-image ${loadedImage ? 'fade-in' : 'fade-out'}`} 
-        src={`projects/${currentImage}`} alt='Project Name'></img>
+        <div 
+          style={{ 
+            maxWidth: '45%', 
+            marginLeft: 'auto', 
+            marginRight: '10%', 
+            marginTop: hoveredDiv * 100, 
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <img 
+            style={{ 
+              width: '100%', 
+              height: 'auto', 
+              objectFit: 'contain',
+              boxShadow: '15px 15px #F80C46', 
+              display: 'block'
+            }} 
+            className={`fade-image ${loadedImage ? 'fade-in' : 'fade-out'}`} 
+            src={`projects/${currentImage}`} 
+            alt='Project Name'
+          />
+        </div>
       </div>
     </div>
   )
