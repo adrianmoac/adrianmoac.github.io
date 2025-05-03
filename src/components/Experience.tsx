@@ -58,7 +58,7 @@ const Experience = (_: Props) => {
           </div>
           <div style={{ display: 'flex', marginLeft: 'auto', marginRight: 0, alignItems: 'center' }}>
             <h4 
-            style={{ color: hoverExperience === experience.companyName + experience.jobTitle ? Colors.red : Colors.charcoal }} 
+            style={{ color: hoverExperience === experience.companyName + experience.jobTitle ? Colors.red : Colors.charcoal, textAlign: 'center' }} 
             >View description</h4>
           </div>
         </div>

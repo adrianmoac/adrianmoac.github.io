@@ -27,8 +27,8 @@ const Modal: React.FC<Props> = ({ open, onCancel, companyName, jobTitle, dateRan
     onClick={onCancel}
     >
       <div 
+      className='modal'
       style={{ backgroundColor: Colors.ghostWhiteLight, 
-        width: '70%', 
         display: 'flex', 
         margin: 'auto', 
         marginRight: 'auto', 

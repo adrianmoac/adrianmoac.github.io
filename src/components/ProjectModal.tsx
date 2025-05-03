@@ -31,8 +31,8 @@ const Modal: React.FC<Props> = ({ open, onCancel, title, description, repo, live
     onClick={onCancel}
     >
       <div 
+      className='modal'
       style={{ backgroundColor: Colors.ghostWhiteLight, 
-        width: '70%', 
         maxHeight: '80vh',
         display: 'flex', 
         margin: 'auto', 
@@ -76,7 +76,7 @@ const Modal: React.FC<Props> = ({ open, onCancel, title, description, repo, live
         <h3 style={{ marginTop: 20, color: Colors.charcoal }}>Description</h3>
         <h5 style={{ color: Colors.charcoal }}>{description}</h5>
         {images.map((img: string) => (
-          <img key={img} style={{ width: '60%', marginLeft: 'auto', marginRight: 'auto', marginTop: 10, marginBottom: 10 }} src={`projects/${img}`} alt='Project Image'></img>
+          <img key={img} className='modal-img' style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 10, marginBottom: 10 }} src={`projects/${img}`} alt='Project Image'></img>
         ))}
       </div>
     </div>

@@ -36,7 +36,7 @@ const ContactMe = (_: Props) => {
 
   return (
     <div style={{ background: Colors.ghostWhiteStrong, paddingTop: 50 }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, maxWidth: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginLeft: 'auto', marginRight: 'auto' }} className='contact-input'>
         <h1 style={{ color: Colors.charcoal, textAlign: 'center', marginTop: 20 }} id='ContactMe'>Contact Me</h1>
         <Input
         style={{ height: 30, padding: 5 }}
@@ -80,7 +80,7 @@ const ContactMe = (_: Props) => {
         onClick={handleSendMail}
         >Send</button>
       </div>
-      <div style={{ marginTop: 20, backgroundColor: Colors.white, height: 50, width: '100%', display: 'flex', justifyContent: 'center', gap: 50, alignItems: 'center' }}>
+      <div className='contact-footer'>
         <h5 style={{ color: Colors.charcoal }}>Adrián Moras Acuña</h5>
         <h5 style={{ color: Colors.charcoal }}>+52 271 108 1488</h5>
         <h5 style={{ color: Colors.charcoal }}>adrianmoac@gmail.com</h5>

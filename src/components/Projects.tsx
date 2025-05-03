@@ -55,8 +55,8 @@ const Projects = (_: Props) => {
     <div style={{ background: Colors.ghostWhiteLight, paddingBottom: 50, paddingTop: 50 }} id='Projects'>
       <Modal open={open} onCancel={handleClose} title={title} repo={repo} liveDemo={liveDemo} technologies={technologies} images={images} description={description}></Modal>
       <h1 style={{ color: Colors.charcoal, textAlign: 'center' }}>Projects</h1>
-      <div style={{ display: 'flex', marginTop: 30 }}>
-        <div style={{ display: 'flex', flexDirection: 'column', width: '30%', marginLeft: '10%', marginBottom: 100 }}>
+      <div style={{ display: 'flex', marginTop: 30 }} className='projects-parent-div'>
+        <div style={{ display: 'flex', flexDirection: 'column', marginBottom: 100 }} className='project-card'>
           {projectsList.map((project: ProjectsInterface, index: number) => 
             <div style={{ 
               background: Colors.ghostWhiteStrong, 
@@ -82,15 +82,15 @@ const Projects = (_: Props) => {
               </div>
               <div style={{ display: 'flex', marginLeft: 'auto', marginRight: 0, alignItems: 'center' }}>
                 <h4 
-                style={{ cursor: 'pointer', color: hoverExperience === project.title ? Colors.red : Colors.charcoal  }} 
+                style={{ cursor: 'pointer', color: hoverExperience === project.title ? Colors.red : Colors.charcoal, textAlign: 'center' }} 
                 >View description</h4>
               </div>
             </div>
           )}
         </div>
         <div 
+        className='project-img'
           style={{ 
-            maxWidth: '45%', 
             marginLeft: 'auto', 
             marginRight: '10%', 
             marginTop: hoveredDiv * 100, 
